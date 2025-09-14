@@ -134,7 +134,7 @@ export function Carousel() {
   }, [currentSlide]);
 
   return (
-    <div className="relative mb-8 mt-12">
+    <div className="relative mb-8 mx-6 mt-12">
       {/* <Image src={naruto1} alt="Naruto" width={500} height={300} /> */}
       {/* Carousel */}
       <div className="relative overflow-hidden">

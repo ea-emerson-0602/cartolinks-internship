@@ -73,7 +73,7 @@ const tools = [
 
 export function Generate() {
   return (
-    <div className="mb-8">
+    <div className="mb-8 mx-6">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-semibold text-foreground">Generate</h2>
         <Button
@@ -87,7 +87,7 @@ export function Generate() {
 
       <div className="grid grid-cols-4 gap-x-4">
         {tools.map((tool, index) => (
-          <Card key={index} className="bg-card ">
+          <Card key={index} className="bg-transparent ">
             <CardContent className="p-4">
               <div className="grid grid-cols-5 gap-4 items-center">
                 {/* Left: Icon */}

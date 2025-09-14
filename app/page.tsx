@@ -4,10 +4,22 @@ import { Carousel } from "./componentss/Carousel";
 import { Generate } from "./componentss/Generate";
 import Navbar from "./componentss/Navbar";
 import FooterBar from "./componentss/FooterBar";
+import "./globals.css"
+import { useEffect } from "react";
 
 export default function Home() {
+// e.g. in _app.tsx or a root client component
+useEffect(() => {
+  // Apply zoom (non-standard but widely supported except Firefox)
+  (document.documentElement.style as any).zoom = "0.8";
+
+  return () => {
+    (document.documentElement.style as any).zoom = "";
+  };
+}, []);
+
   return (
-        <main className="min-h-screen bg-white dark:bg-gray-900 transition">
+        <main className="min-h-screen bg-white dark:bg-gray-900 transition app-wrapper">
       <Navbar />
       <div className=" text-gray-800 dark:text-white">
         {/* Your main page content */}

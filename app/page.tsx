@@ -4,7 +4,6 @@ import { Carousel } from "./componentss/Carousel";
 import { Generate } from "./componentss/Generate";
 import Navbar from "./componentss/Navbar";
 import FooterBar from "./componentss/FooterBar";
-import "./globals.css"
 import { useEffect } from "react";
 
 export default function Home() {
@@ -19,7 +18,7 @@ useEffect(() => {
 }, []);
 
   return (
-        <main className="min-h-screen bg-white dark:bg-gray-900 transition app-wrapper">
+        <main className="min-h-screen bg-white dark:bg-gray-900 transition">
       <Navbar />
       <div className=" text-gray-800 dark:text-white">
         {/* Your main page content */}

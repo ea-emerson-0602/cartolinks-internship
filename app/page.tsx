@@ -11,10 +11,10 @@ export default function Home() {
 // e.g. in _app.tsx or a root client component
 useEffect(() => {
   // Apply zoom (non-standard but widely supported except Firefox)
-  (document.documentElement.style as any).zoom = "0.8";
+  (document.documentElement.style).zoom = "0.8";
 
   return () => {
-    (document.documentElement.style as any).zoom = "";
+    (document.documentElement.style).zoom = "";
   };
 }, []);
 
